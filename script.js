@@ -32,7 +32,7 @@ function remove_double_whitespaces(str) {
 
 function check_duplicates(){
     var textarea_value = get_element_value(textarea)
-    var all_words = get_word_list(textarea_value)
+    var all_words = get_word_list(textarea_value).filter((letter) => letter !== ""); // making sure the empty string is not count as a word
     var num_words = all_words.length;
     const duplicates = all_words.filter((item, index) => all_words.indexOf(item) !== index);
     if (duplicates != 0) {
