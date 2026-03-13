@@ -16,6 +16,7 @@ function get_word_list(str){
     var text = remove_punctuation(text);
     var text = remove_double_whitespaces(text); 
     var all_words = text.split(" ");
+    // remove possible empty string at the end!
     return all_words
 }
 
