@@ -1,0 +1,6 @@
+#textarea {
+        width: 100%;
+        max-width: 900px;
+        box-sizing: border-box;
+        resize: vertical;
+}
